@@ -1,0 +1,1 @@
+export const ADD_FINDED_WORD = "ADD_FINDED_WORD";
