@@ -47,7 +47,7 @@ export default {
     const res = await PublicAPI.getWord();
     const WORD = res.word;
     const FINDED_WORD = findWord(this.field, WORD);
-    if (FINDED_WORD) {
+    if (FINDED_WORD.length) {
       this.wordFindedHandler(FINDED_WORD);
       this.$store.commit("ADD_FINDED_WORD", {
         word: WORD,
